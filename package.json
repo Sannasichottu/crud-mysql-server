@@ -4,12 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-<<<<<<< HEAD
-    "start": "nodemon index.js",
-=======
      "start": "node index.js",
     "dev": "nodemon index.js",
->>>>>>> 9fe87df716aaf5fcff9180c4144c0fc727b90e88
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "sannasi",
