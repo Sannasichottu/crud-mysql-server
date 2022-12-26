@@ -3,12 +3,13 @@ const app = express();
 const bodyParser = require ('body-parser');
 const mysql = require("mysql2");
 const cors = require("cors");
+require('dotenv').config();
 
 const db = mysql.createConnection ({
-    host:"localhost",
-    user:"root",
-    password:"Dhosanjay7",
-    database:"crud_contact"
+    host: process.env.host,
+    user: process.env.user,
+    password: process.env.Password,
+    database: process.env.Database
 });
 
 app.use(cors());
@@ -74,6 +75,6 @@ app.get("/", (req,res) => {
     }) */
 })
 
-app.listen(5000,() => {
+app.listen(process.env.Port,() => {
     console.log("Server running on pport 5000");
 })
